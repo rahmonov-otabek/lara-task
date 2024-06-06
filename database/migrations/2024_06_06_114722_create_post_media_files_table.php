@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('post_media_files', function (Blueprint $table) {
+        Schema::create('post_files', function (Blueprint $table) {
             $table->id();
             $table->string('file');
             $table->string('type');
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('post_media_files');
+        Schema::dropIfExists('post_files');
     }
 };

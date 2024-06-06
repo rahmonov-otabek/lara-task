@@ -24,8 +24,8 @@ class Post extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function media_files()
+    public function files()
     {
-        return $this->hasMany(PostMediaFiles::class, 'post_id');
+        return $this->hasMany(PostFiles::class, 'post_id');
     }
 }

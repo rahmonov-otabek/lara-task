@@ -28,8 +28,8 @@ class UpdatePostRequest extends FormRequest
             'description_uz' => 'nullable|string',
             'description_ru' => 'nullable|string',
             'description_uzc' => 'nullable|string', 
-            'images' => 'nullable|array',
-            'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+            'files' => 'nullable|array',
+            'files.*' => '',
             'category_id' => 'sometimes|required|exists:categories,id',
         ];
     }
