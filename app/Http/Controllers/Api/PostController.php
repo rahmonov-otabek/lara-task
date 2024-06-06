@@ -30,7 +30,7 @@ class PostController extends Controller
           
         $post = Post::create($validated); 
 
-        if(!empty($validated['images'])) { 
+        if(!empty($validated['files'])) { 
             UploadHelper::uploadPostFiles($request, $post);
         } 
 

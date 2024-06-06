@@ -13,9 +13,9 @@ class Post extends Model
         'title_uz', 
         'title_ru', 
         'title_uzc',  
-        'content_uz', 
-        'content_ru', 
-        'content_uzc', 
+        'description_uz', 
+        'description_ru', 
+        'description_uzc', 
         'category_id'
     ]; 
 
