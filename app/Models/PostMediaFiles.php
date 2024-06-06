@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class PostImages extends Model
+class PostMediaFiles extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'image',
-        'post_id'
+        'file',
+        'type',
+        'post_id',
     ];
 
     public function post()

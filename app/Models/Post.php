@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model; 
 
 class Post extends Model
 {
@@ -12,8 +12,7 @@ class Post extends Model
     protected $fillable = [
         'title_uz', 
         'title_ru', 
-        'title_uzc', 
-        'image', 
+        'title_uzc',  
         'content_uz', 
         'content_ru', 
         'content_uzc', 
@@ -25,8 +24,8 @@ class Post extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function images()
+    public function media_files()
     {
-        return $this->hasMany(Post::class, 'post_id');
+        return $this->hasMany(PostMediaFiles::class, 'post_id');
     }
 }
